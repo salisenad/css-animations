@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!-- Rotating Fruits -->
+        <img style="" id="combo" class="combo  position-absolute" width="16%" src="images/combo.png" alt="">
+
+        <img style="" id="blatt1-right" class="blatt1-right zero-opacity position-absolute" width="5%" src="images/blatt1.png" alt="">
+        <img style="" id="blatt1-left" class="blatt1-left zero-opacity position-absolute" width="4.5%" src="images/blatt1.png" alt="">
+        <img style="" id="blatt2right-down" class="blatt2right-down zero-opacity position-absolute" width="4.5%" src="images/blatt2.png" alt="">
+        <img style="" id="blatt2right-middle" class="blatt2right-middle zero-opacity position-absolute" width="4.5%" src="images/blatt2.png" alt="">
+        <img style="" id="blatt2-right" class="blatt2-right zero-opacity position-absolute" width="5.5%" src="images/blatt2.png" alt="">
+        <img style="" id="blatt2-left" class="blatt2-left zero-opacity position-absolute" width="5.5%" src="images/blatt2.png" alt="">
+        <img style="" id="pfirish-down" class="pfirish-down zero-opacity position-absolute" width="4%" src="images/pfirsich.png" alt="">
+        <img style="" id="middle-hibiscus" class="middle-hibiscus zero-opacity position-absolute" width="3.5%" src="images/hibiskus.png" width="6%" >
+        <!-- <img style="" id="pfirish-right" class="pfirish-right" width="4%" src="images/pfirsich.png"> -->
+        <img style="" id="left-pfirish-img" class="left-pfirish-img fruits zero-opacity position-absolute" src="images/pfirsich.png" width="5%" >
+        <img style="" id="right-top-hibiscus-img" class="right-hibiscus-img fruits zero-opacity position-absolute" width="5%" src="images/hibiskus.png" width="6%">
+        <img style="" id="right-down-hibiscus-img" class="right-hibiscus-img fruits zero-opacity position-absolute"width="3.5%" src="images/hibiskus.png" width="6%" >
+        <img style="" id="left-hibiscus-img" class="left-hibiscus-img fruits zero-opacity position-absolute" src="images/hibiskus.png" width="6%">
+        <img style="" id="down-hibiscus-img" class="down-hibiscus-img fruits zero-opacity position-absolute" src="images/hibiskus.png" width="4%">
+
+         <!-- Main images -->
+        <img style="" id="swipe-finger-img" width="4%" class="swipe-finger-img position-absolute" src="images/swipe_icon.png" >
+        <img style="" id="bootle-img" width="6%" class="bootle-img position-absolute" src="images/flasche_kontur.png">
+        <img style="" id="full-bootle-img" width="6%" class="bootle-img zero-opacity position-absolute" src="images/flasche_hibiskus.png" >
+        <img style="" id="wisch-text-img" class="wisch-text-img position-absolute" src="images/wisch_text.png" width="15%" >
+        <img style="" id="frutzea-img" class="frutzea-img position-absolute" src="images/fuzetea.png" alt="" width="4%">
+        <img style="" id="background-img" class="background-img" src="images/background.png" width="20%">
+        
+
+        
+</div>
+</body>
+<script type="text/javascript">
+
+    document.querySelector('.swipe-finger-img').addEventListener("mouseover", function() {
+
+        document.getElementById("wisch-text-img").className += " fade-out-slow";
+        document.getElementById("swipe-finger-img").className += " fade-out-fast";
+        document.getElementById("bootle-img").className += " fade-out-slow";
+
+        document.getElementById("left-pfirish-img").className += " show-linear rotating";
+        document.getElementById("right-top-hibiscus-img").className += " show-linear rotating";
+        document.getElementById("right-down-hibiscus-img").className += " show-linear rotating";
+        document.getElementById("left-hibiscus-img").className += " show-linear rotating" ;
+        document.getElementById("down-hibiscus-img").className += " show-linear rotating";
+
+        document.getElementById("blatt1-right").className += " show-linear rotating";
+        document.getElementById("blatt1-left").className += " show-linear rotating";
+        document.getElementById("blatt2right-down").className += " show-linear rotating";
+        document.getElementById("blatt2right-middle").className += " show-linear rotating";
+        document.getElementById("blatt2-right").className += " show-linear rotating";
+        document.getElementById("blatt2-left").className += " show-linear rotating";
+        // document.getElementById("pfirish-right").className += " show-linear rotating";
+        document.getElementById("pfirish-down").className += " show-linear rotating";
+        document.getElementById("middle-hibiscus").className += " show-linear rotating";
+
+
+        document.getElementById("full-bootle-img").className += " show-linear-slow ";
+
+      
+
+    }, {once : true});
+
+    // let fruits = document.getElementsByClassName("fruits");
+    // for(var i = 0; i < fruits.length; i++){
+    //      fruits.item(i).className = " show-linear";
+    // }
+</script>
+
+</html>
+
+
+

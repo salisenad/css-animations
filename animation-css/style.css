@@ -1,0 +1,278 @@
+/*Images  - start*/
+.position-absolute {
+    position: absolute ;
+}
+.wisch-text-img {
+    z-index: 9;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+.background-img{
+    position: relative;
+    
+}
+.wich-text-img {
+    margin-left: 1.5%;
+    margin-top: 3%;
+}
+.bootle-img {
+    z-index: 9;
+    margin-top: 9%;
+    margin-left: 6.5%;
+}
+.swipe-finger-img{
+    z-index: 10;
+    margin-top:16%;
+    margin-left: 7.5%;
+}
+.frutzea-img {
+    z-index: 9;
+    margin-left: 1.5%;
+    margin-top: 24.5%;
+}
+
+.zero-opacity{
+    opacity: 0;
+}
+/*Images - end*/
+
+/*Fruits - start*/
+.down-hibiscus-img {
+    z-index: 10;
+    margin-top: 27%;
+}
+.left-hibiscus-img {
+    z-index: 10;
+    margin-top: 9%;
+    margin-left: 3%;
+}
+.middle-hibiscus-img {
+    z-index: 10;
+    margin-top: 23%;
+    margin-left: 10%;
+
+}
+.right-hibiscus-img {
+    z-index: 10;
+    margin-top: 18%;
+    margin-left:15%;
+}
+.left-pfirish-img {
+    z-index: 10;
+    margin-top: 17%;
+    margin-left: 2%;
+}
+
+.pfirish-down {
+    z-index: 9999;
+    margin-top: 25%;
+    margin-left: 14%;
+}
+.blatt2-left {
+    z-index: 999;
+    margin-top: 13%;
+}
+.blatt2-right {
+    z-index: 99999;
+    margin-top: 12%;
+    margin-left: 13%;
+}
+.blatt2right-middle {
+    z-index: 99;
+    margin-top: 20.5%;
+    margin-left: 14%;
+}
+.blatt2right-down {
+    position: absolute;
+    z-index: 99;
+    margin-top: 25%;
+    margin-left: 14%;
+}
+.blatt1-left {
+    z-index: 99;
+    margin-top: 20%;
+    margin-left: 1.5%;    
+}
+.blatt1-right {
+    z-index: 99;
+    margin-top: 24%;
+}
+.middle-hibiscus {
+    z-index: 9999;
+    margin-top: 23%;
+    margin-left: 10%;
+
+}
+.right-hibiscus {
+    z-index: 9999;
+    margin-top: 18%;
+    margin-left:15%;
+}
+
+
+/*Fruits - end*/
+
+
+/*Show,float, fade in and fade out effects - start*/
+
+.rotating {
+   animation-delay: 3s;
+  -webkit-animation: rotating 12s linear infinite;
+  -moz-animation: rotating 12s linear infinite;
+  -ms-animation: rotating 12s linear infinite;
+  -o-animation: rotating 12s linear infinite;
+  animation: rotating 12s linear infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.combo {
+    z-index: 9;
+    margin-top: 7%;
+    margin-left: 1%;
+}
+
+.float-bubble-up{
+    animation-delay: 12s;
+    animation: floatBubble 2s  normal ease-out forwards;
+    -moz-animation: floatBubble 2s  normal ease-out forwards; /* Firefox */
+    -webkit-animation: floatBubble 2s  normal ease-out forwards; /* Safari and Chrome */
+    -o-animation: floatBubble 2s  normal ease-out forwards; /* Opera */
+}
+@keyframes floatBubble {
+    0% {
+        top:0px;
+    }
+    100% {
+        top: -20px;
+    }
+}
+@-webkit-keyframes floatBubble {
+    0% {
+        top:0px;
+    }
+    100% {
+        top: -20px;
+    }
+}
+@-webkit-keyframes floatBubble { /* Safari and Chrome */
+    0% {
+        top:0px;
+    }
+    100% {
+        top: -20px;
+    }
+}
+@-o-keyframes floatBubble { /* Opera */
+    0% {
+        top:0px;
+    }
+    100% {
+        top: -20px;
+    }
+}
+
+.show-linear{
+  opacity: 1;
+  transition: opacity 3s linear;
+  -webkit-transition: opacity 3s linear ;
+  -moz-transition: opacity 3s linear ;
+  -o-transition: opacity 3s linear ;
+}
+
+.show-linear-slow{
+  opacity: 1;
+  animation-delay: 5s;
+  transition: opacity 6s linear;
+  -webkit-transition: opacity 6s linear ;
+  -moz-transition: opacity 6s linear ;
+  -o-transition: opacity 6s linear ;
+}
+.fade-in{
+    animation: fadein 4s forwards;
+    -moz-animation: fadein 4s forwards; /* Firefox */
+    -webkit-animation: fadein 4s forwards; /* Safari and Chrome */
+    -o-animation: fadein 4s forwards; /* Opera */
+}
+
+.fade-out{
+    animation: fadeout 4s forwards;
+    -moz-animation: fadeout 4s forwards; /* Firefox */
+    -webkit-animation: fadeout 4s forwards; /* Safari and Chrome */
+    -o-animation: fadeout 4s forwards; /* Opera */
+}
+
+.fade-out-slow{
+    animation: fadeout 6s forwards;
+    -moz-animation: fadeout 6s forwards; /* Firefox */
+    -webkit-animation: fadeout 6s forwards; /* Safari and Chrome */
+    -o-animation: fadeout 6s forwards; /* Opera */
+}
+
+.fade-out-fast{
+    animation: fadeout 2s forwards;
+    -moz-animation: fadeout 2s forwards; /* Firefox */
+    -webkit-animation: fadeout 2s forwards; /* Safari and Chrome */
+    -o-animation: fadeout 2s forwards; /* Opera */
+}
+
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/*Fade in and fade out effects - end*/
