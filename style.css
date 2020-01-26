@@ -186,8 +186,6 @@
   }
 }
 
-
-
 .float-bubble-up{
     animation-delay: 12s;
     animation: floatBubble 2s  normal ease-out forwards;
@@ -316,22 +314,3 @@
 }
 /*Fade in and fade out effects - end*/
 
-
-
-
-
-
-#swipezone{
-    width: 30%;
-    height: 250px;
-    text-align: center;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    font-size: 5vw;
-    font-family: 'Comfortaa', cursive;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
