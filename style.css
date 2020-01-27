@@ -1,40 +1,51 @@
 /*Images  - start*/
 .position-absolute {
-    position: absolute ;
+    position: absolute;
 }
+
 .wisch-text-img {
     z-index: 9;
     margin-left: 1%;
     margin-top: 3%;
 }
-.background-img{
+
+.background-img {
     position: relative;
-    
+
 }
+
+.full-bottle-img {
+    z-index: 999;
+}
+
 .wich-text-img {
     margin-left: 1.5%;
     margin-top: 3%;
 }
-.bootle-img {
+
+.bottle-img {
     z-index: 9;
     margin-top: 9%;
-    margin-left: 6.5%;
+    margin-left: 6.8%;
 }
-.swipe-finger-img{
+
+.swipe-finger-img {
     z-index: 10;
-    margin-top:16%;
+    margin-top: 16%;
     margin-left: 7.5%;
     cursor: pointer;
 }
+
 .frutzea-img {
     z-index: 99999;
     margin-left: 1.5%;
     margin-top: 24.5%;
 }
 
-.zero-opacity{
+.zero-opacity {
     opacity: 0;
 }
+
 /*Images - end*/
 
 /*Fruits - start*/
@@ -42,22 +53,26 @@
     z-index: 10;
     margin-top: 27%;
 }
+
 .left-hibiscus-img {
     z-index: 10;
     margin-top: 9%;
     margin-left: 3%;
 }
+
 .middle-hibiscus-img {
     z-index: 10;
     margin-top: 23%;
     margin-left: 10%;
 
 }
+
 .right-hibiscus-img {
     z-index: 10;
     margin-top: 18%;
-    margin-left:15%;
+    margin-left: 15%;
 }
+
 .left-pfirish-img {
     z-index: 10;
     margin-top: 17%;
@@ -69,211 +84,192 @@
     margin-top: 25%;
     margin-left: 14%;
 }
+
 .blatt2-left {
     z-index: 999;
     margin-top: 13%;
 }
+
 .blatt2-right {
     z-index: 99999;
     margin-top: 12%;
     margin-left: 13%;
 }
+
 .blatt2right-middle {
     z-index: 99;
     margin-top: 20.5%;
     margin-left: 14%;
 }
+
 .blatt2right-down {
     position: absolute;
     z-index: 99;
     margin-top: 25%;
     margin-left: 14%;
 }
+
 .blatt1-left {
     z-index: 99;
     margin-top: 20%;
-    margin-left: 1.5%;    
+    margin-left: 1.5%;
 }
+
 .blatt1-right {
     z-index: 99;
     margin-top: 24%;
 }
+
 .middle-hibiscus {
     z-index: 9999;
     margin-top: 23%;
     margin-left: 10%;
 
 }
+
 .right-hibiscus {
     z-index: 9999;
     margin-top: 18%;
-    margin-left:15%;
+    margin-left: 15%;
 }
+
 .combo {
     z-index: 9;
     margin-top: 7%;
     margin-left: 1%;
 }
+
 .ueberrascht-text {
     z-index: 9;
     margin-top: 2%;
     margin-left: 1.5%;
 }
-.erlebe-text{
+
+.erlebe-text {
     z-index: 9;
     margin-top: 25.5%;
     margin-left: 6.5%;
 }
+
 .flaschen-packshot {
     z-index: 9;
     margin-top: 8%;
     margin-left: 5%;
 }
+
 .flaschen-bg {
     z-index: 5;
     margin-top: 6%;
     margin-left: 0%;
 }
+
 .neu {
     z-index: 11;
     margin-top: 7%;
     margin-left: 14%;
 }
+
 .cta-btn {
     z-index: 12;
     margin-top: 20%;
     margin-left: 5.7%;
     height: 59px;
 }
+
 .legaline {
     z-index: 8;
     margin-top: 28.5%;
     margin-left: 2.7%;
 }
+
 /*Fruits - end*/
 
 
-/*Show,float, fade in and fade out effects - start*/
+/*Show,float,linear, fade in and fade out effects - start*/
 
 
-
-@-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
+@-webkit-keyframes rotating /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
 }
+
 @keyframes rotating {
-  from {
-    -ms-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -ms-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
 }
 
-.float-bubble-up{
-    animation-delay: 12s;
-    animation: floatBubble 2s  normal ease-out forwards;
-    -moz-animation: floatBubble 2s  normal ease-out forwards; /* Firefox */
-    -webkit-animation: floatBubble 2s  normal ease-out forwards; /* Safari and Chrome */
-    -o-animation: floatBubble 2s  normal ease-out forwards; /* Opera */
-}
-@keyframes floatBubble {
-    0% {
-        top:0px;
-    }
-    100% {
-        top: -20px;
-    }
-}
-@-webkit-keyframes floatBubble {
-    0% {
-        top:0px;
-    }
-    100% {
-        top: -20px;
-    }
-}
-@-webkit-keyframes floatBubble { /* Safari and Chrome */
-    0% {
-        top:0px;
-    }
-    100% {
-        top: -20px;
-    }
-}
-@-o-keyframes floatBubble { /* Opera */
-    0% {
-        top:0px;
-    }
-    100% {
-        top: -20px;
-    }
-}
 .rotating {
     animation-delay: 5s;
-   -webkit-animation: rotating 5s linear infinite;
-   -moz-animation: rotating 5s linear infinite;
-   -ms-animation: rotating 5s linear infinite;
-   -o-animation: rotating 5s linear infinite;
-   animation: rotating 5s linear infinite;
- }
-.show-linear{
-  opacity: 1;
-  transition: opacity 3s linear;
-  -webkit-transition: opacity 3s linear ;
-  -moz-transition: opacity 3s linear ;
-  -o-transition: opacity 3s linear ;
+    -webkit-animation: rotating 5s linear infinite;
+    -moz-animation: rotating 5s linear infinite;
+    -o-animation: rotating 5s linear infinite;
+    animation: rotating 5s linear infinite;
 }
 
-.show-linear-slow{
-  opacity: 1;
-  animation-delay: 5s;
-  transition: opacity 6s linear;
-  -webkit-transition: opacity 6s linear ;
-  -moz-transition: opacity 6s linear ;
-  -o-transition: opacity 6s linear ;
+.show-linear {
+    opacity: 1;
+    transition: opacity 3s linear;
+    -webkit-transition: opacity 3s linear;
+    -moz-transition: opacity 3s linear;
+    -o-transition: opacity 3s linear;
 }
-.fade-in{
+
+.show-linear-slow {
+    opacity: 1;
+    animation-delay: 5s;
+    transition: opacity 6s linear;
+    -webkit-transition: opacity 6s linear;
+    -moz-transition: opacity 6s linear;
+    -o-transition: opacity 6s linear;
+}
+
+.fade-in {
     animation: fadein 7s forwards;
     -moz-animation: fadein 7s forwards; /* Firefox */
     -webkit-animation: fadein 7s forwards; /* Safari and Chrome */
     -o-animation: fadein 7s forwards; /* Opera */
 }
 
-.transform-180{
+.transform-180 {
     transform: rotate(180deg);
 }
-.fade-out{
+
+.fade-out {
     animation: fadeout 4s forwards;
     -moz-animation: fadeout 4s forwards; /* Firefox */
     -webkit-animation: fadeout 4s forwards; /* Safari and Chrome */
     -o-animation: fadeout 4s forwards; /* Opera */
 }
 
-.fade-out-slow{
+.fade-out-slow {
     animation: fadeout 6s forwards;
     -moz-animation: fadeout 6s forwards; /* Firefox */
     -webkit-animation: fadeout 6s forwards; /* Safari and Chrome */
     -o-animation: fadeout 6s forwards; /* Opera */
 }
 
-.fade-out-fast{
+.fade-out-fast {
     animation: fadeout 2s forwards;
     -moz-animation: fadeout 2s forwards; /* Firefox */
     -webkit-animation: fadeout 2s forwards; /* Safari and Chrome */
@@ -282,35 +278,93 @@
 
 @keyframes fadeout {
     from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-    }
-}
-@-moz-keyframes fadeout { /* Firefox */
-    from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-    }
-}
-@-webkit-keyframes fadeout { /* Safari and Chrome */
-    from {
-        opacity:1;
-    }
-    to {
-        opacity:0;
-    }
-}
-@-o-keyframes fadeout { /* Opera */
-    from {
-        opacity:1;
+        opacity: 1;
     }
     to {
         opacity: 0;
     }
 }
-/*Fade in and fade out effects - end*/
+
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.linear-move {
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 3s;
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 0.5%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@-moz-keyframes run { /* Firefox */
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 0.5%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes run { /* Safari and Chrome */
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 0.5%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@-o-keyframes run { /* Opera */
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 0.5%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/*Show,float, linear, fade in and fade out effects - end*/
 
